@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/medicineNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medicine Name"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <TimePicker
+        android:id="@+id/reminderTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicineNameEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <Button
+        android:id="@+id/addMedicineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Medicine"
+        android:layout_below="@id/reminderTimePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/addedMedicinesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Added Medicines:"
+        android:layout_below="@id/addMedicineButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"/>
+</RelativeLayout>
